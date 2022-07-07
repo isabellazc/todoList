@@ -22,6 +22,7 @@ input.addEventListener('keypress', (event) => {
         if(input.value !== ''){
         event.preventDefault()
         addTodo(input.value)
+        input.value = "";
         return
     }
         return alert("add a todo. Don't leave it on blank. ")
