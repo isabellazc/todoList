@@ -1,5 +1,5 @@
 * { 
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Roboto Mono', monospace;
    
 }
@@ -77,10 +77,8 @@ button::after{
     background-color: rgb(147, 147, 147) ;
 }
 
-/*add new item section*/
-
-
-.todo-form{
+/*add new item form*/
+.add-form{
     justify-items: center;
     display: flex;
     margin: 0px auto;
@@ -88,8 +86,7 @@ button::after{
     border-radius: 10px;
 }
 
-
-input{
+#add-form input{
     color:  rgb(83, 83, 83) ;
     background-color: white;
     border: none;
@@ -101,12 +98,27 @@ input{
 }
 
 
-input[type=text]:focus {
+#add-form input[type=text]:focus {
     border: none;
     border-bottom: solid 3px rgb(83, 83, 83);
     outline: none;
     background-color: white;
 }
+/*title form*/
+#title-form{
+    color: rgb(32, 32, 32);
+    text-align: center;
+    margin: 100px auto;
+}
+#title-form input{
+    font-size: 2.3rem;
+    border:none;
+    align-content: center;
+    outline: none;
+    text-align: center;
+}
+
+
 
 /*utilities*/
 .hidden{

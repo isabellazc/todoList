@@ -30,6 +30,18 @@ input.addEventListener('keypress', (event) => {
 
 })
 
+//Add new title to the list
+const title = document.getElementById('title');
+
+title.addEventListener('keypress', (event) =>{
+    if(event.key === "Enter"){
+        
+        event.preventDefault()
+        return
+    }
+      
+})
+
 
 
 function renderTodo(listTodo){
@@ -45,6 +57,5 @@ function renderTodo(listTodo){
 //made appear the add todo input
 
 //change the name of the list
-//change font
 //activate dots buttons
 
