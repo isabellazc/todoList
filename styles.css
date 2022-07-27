@@ -111,6 +111,7 @@ button::after{
     margin: 100px auto;
 }
 #title-form input{
+    
     font-size: 2.3rem;
     border:none;
     align-content: center;
@@ -118,10 +119,44 @@ button::after{
     text-align: center;
 }
 
+#title-form input::placeholder{
+    color: rgb(32, 32, 32);
+}
+
+
+/*dropdown menu*/
+.dropBtn{
+    display: flex;
+}
+.dropdown-content{
+    
+    display: none;
+    height:80px;
+    position: absolute;
+    width: 100px;
+    color:white;
+    background-color: rgb(32, 32, 32);
+    flex-direction:column;
+    border-radius: 10px;
+    padding:10px 0px;
+    
+    
+}
+.dropdown-content a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.dropdown-content a:hover{
+    background-color: rgb(212, 212, 212);
+    
+}
+
+
 
 
 /*utilities*/
 .hidden{
     display:none;
-
+    
 }

@@ -18,11 +18,19 @@
 <body>
 
     <form id="title-form" class="title-form" autocomplete="off">
-        <input id="title" placeholder="My list" type="text">
+        <input value="My list"id="title" type="text">
     </form>
     <div class="list">
         <ul id="list">
-            <!--<li><div  id="item-1" class="list-item"><p>Walk the dog</p><i class="fa-solid fa-ellipsis-vertical"></i>-->
+            <!--<div  id="${listTodo.id}" class="list-item">
+            <p>${listTodo.action}</p>
+            <i class="dropbtn fa-solid fa-ellipsis-vertical"></i>
+            <div class=" dropdown-content">
+                <a href="#">Delete</a>
+                <a href="#">Edit</a>
+            </div>
+            </div>
+            -->
           
         </ul>
         <form id="add-form" class="add-form" autocomplete="off">
@@ -35,10 +43,14 @@
         
     
     <!-- 
-        <div id="add-bttn">
-            <button id="open-add-div"><i class="fa-solid fa-plus"></i>Add item</button>
-            <div class="add-form"></div>
-        </div>
+       <div  id="${listTodo.id}" class="list-item">
+    <p>${listTodo.action}</p><i class="dropbtn fa-solid fa-ellipsis-vertical">
+    <div class=" dropdown-content">
+    <a href="#">Delete</a>
+    <a href="#">Edit</a>
+    </div></i>
+    
+    </div>
     -->
     </div>
     

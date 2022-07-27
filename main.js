@@ -30,6 +30,16 @@ input.addEventListener('keypress', (event) => {
 
 })
 
+//display options for every todo
+/*const moreMenu = document.getElementsByClassName('dropbtn');
+for(let i = 0; i < moreMenu.length; i++){
+    moreMenu[i].addEventListener('click', ()=>{
+        let content = moreMenu[i].getElementsByClassName('dropdown-content');
+        content[0].classList.remove('hidden')
+    })
+}*/
+
+
 //Add new title to the list
 const title = document.getElementById('title');
 
@@ -37,25 +47,51 @@ title.addEventListener('keypress', (event) =>{
     if(event.key === "Enter"){
         
         event.preventDefault()
+        
         return
     }
       
 })
 
+//mark as completed
+let ul = document.getElementById('list');
+ul.addEventListener('click' ,(event)=>{
+    if(event.target.style.textDecoration != 'line-through'){
+        event.target.style.textDecoration = 'line-through'
+    }else{
+        event.target.style.textDecoration = 'none'
+    }
+    
+})
 
 
+
+//Render list
 function renderTodo(listTodo){
 
     //add a li
     let liElement = document.createElement('li');
-    liElement.innerHTML =` <div  id="${listTodo.id}" class="list-item"><p>${listTodo.action}</p><i class="fa-solid fa-ellipsis-vertical"></i></div>`
+    liElement.innerHTML =` 
+    <div  id="${listTodo.id}" class="list-item">
+    <p>${listTodo.action}</p>
+    <i class="dropbtn fa-solid fa-ellipsis-vertical">
+    <div class=" dropdown-content">
+    <a href="#">Delete</a>
+    <a href="#">Edit</a>
+    </div></i>
+    
+    </div>
+   `
         
     myList.appendChild(liElement)
+    console.log(list)
 
 }
 
-//made appear the add todo input
 
-//change the name of the list
+
+//crossline items when click
+//settings button in the top left
+//night mode
 //activate dots buttons
 
